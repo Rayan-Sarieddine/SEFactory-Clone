@@ -367,6 +367,9 @@ nav {
 .circle-green {
   background-color: #28eea7;
 }
+.circle-white {
+  background-color: #fff;
+}
 .section-intro_header {
   font-size: 2.4rem;
   font-weight: 900;
@@ -455,3 +458,242 @@ iframe {
 .bold {
   font-weight: 800;
 }
+/*programs section*/
+.header-programs {
+  padding: 1rem 2rem;
+  background-color: #363738;
+  color: #fff;
+}
+.programs {
+  margin-top: 7rem;
+  height: 100vh;
+}
+.navlist {
+  display: flex;
+  list-style: none;
+  margin-left: 20rem;
+}
+.navlist-link {
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 1rem 5rem;
+}
+.nav-a {
+  cursor: pointer;
+}
+.programs-cards {
+  width: 75%;
+  margin: 0 auto;
+}
+.programs-card {
+  background-color: #363738;
+  display: flex;
+  padding: 3rem;
+  border-radius: 15px;
+  gap: 3rem;
+  color: #fff;
+  justify-content: space-around;
+}
+
+.programs-card_img {
+  width: 30%;
+}
+.programs-card_img img {
+  border-radius: 20px;
+}
+.programs-card_left {
+  width: 70%;
+  text-align: left;
+}
+.programs-card_title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.programs-card_info {
+  font-size: 1.4rem;
+  color: #dcdee1;
+  margin-top: 1.5rem;
+}
+.programs-card_CTA {
+  display: flex;
+  gap: 2rem;
+}
+.programs-card_CTA {
+  margin-top: 6rem;
+  width: 100%;
+}
+.programs-card_date {
+  padding: 1rem 2rem;
+  background-color: #232323;
+  font-size: 1.4rem;
+  width: 50%;
+}
+.programs-card_date span {
+  color: #28eea7;
+  font-weight: 900;
+}
+.programs-card_button {
+  padding: 1rem 2rem;
+  background-color: #232323;
+  font-size: 1.4rem;
+  text-align: right;
+  font-weight: 900;
+  width: 50%;
+  text-transform: uppercase;
+}
+.hide {
+  display: none;
+}
+.FCS-date span {
+  color: rgb(255, 198, 53);
+}
+.FCS-card h2 span {
+  color: rgb(255, 198, 53);
+}
+.FSD-date span {
+  color: rgb(152, 100, 218);
+}
+.FSD-card h2 span {
+  color: rgb(152, 100, 218);
+}
+.UIX-date span {
+  color: #fb508e;
+}
+.UIX-card h2 span {
+  color: #fb508e;
+}
+.FSD-card .programs-card_img img {
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+}
+.UIX-card .programs-card_img img {
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+}
+
+.program-selected {
+  background-color: #363738;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.FCS-color {
+  color: rgb(255, 198, 53);
+}
+.FSD-color {
+  color: rgb(152, 100, 218);
+}
+.FSW-color {
+  color: #28eea7;
+}
+.UIX-color {
+  color: #fb508e;
+}
+.FCS-backcolor {
+  background-color: rgb(255, 198, 53);
+}
+.FSD-backcolor {
+  background-color: rgb(152, 100, 218);
+}
+.FSW-backcolor {
+  background-color: #28eea7;
+}
+.UIX-backcolor {
+  background-color: #fb508e;
+}
+
+.card-animation {
+  animation: cardshow 0.2s ease-in;
+}
+@keyframes cardshow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+/*section hire*/
+.hire {
+  background-color: #363738;
+}
+.hire .section-intro h3 {
+  color: #fff;
+}
+.hire-box {
+  width: 80%;
+  padding: 3rem;
+  background-color: #232323;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.hire-box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 900;
+}
+.hire-box h4 {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  background-color: #363738;
+  margin-top: 2rem;
+}
+.hire-box h4 span {
+  color: #28eea7;
+  font-weight: 900;
+}
+.hire-list {
+  list-style-type: decimal;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-left: 3.5rem;
+  margin-top: 3rem;
+}
+.hire-box p {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+.hire-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #363738;
+  margin-top: 3rem;
+  width: 100%;
+  text-align: right;
+  padding: 1.5rem 2rem;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.hr-box {
+  width: 80%;
+  padding: 3rem;
+  background-color: #232323;
+  display: flex;
+  margin: 0 auto;
+  gap: 3rem;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 3.5rem;
+}
+.hr-box_img {
+  width: 13rem;
+}
+.hr-box h4,
+.hr-box p {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+.hr-box h4 {
+  word-spacing: -8px;
+}
+.hr-box p {
+  word-spacing: 2px;
+}
+/*testimonials section*/
