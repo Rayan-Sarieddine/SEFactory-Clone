@@ -67,4 +67,36 @@ program_btns.forEach((btn) => {
   });
 });
 
-//
+//testimonials
+const testimonials_buttons = document.querySelectorAll(".t-circle");
+const testimonial_cards = document.querySelectorAll(".testimonial-box");
+testimonials_buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let selectedbtn_id;
+    if (!btn.classList.contains("t-circle-clicked")) {
+      //add selected css styling to pressed btn
+      btn.classList.add("t-circle-clicked");
+      selectedbtn_id = btn.classList[1].charAt(0);
+      console.log(selectedbtn_id);
+    }
+    testimonials_buttons.forEach((btn) => {
+      //remove the selected btn animation from the unclicked ones
+      if (
+        btn.classList[1].charAt(0) != selectedbtn_id &&
+        btn.classList.contains("t-circle-clicked")
+      ) {
+        btn.classList.remove("t-circle-clicked");
+      }
+    });
+    console.log(`.t-${selectedbtn_id}`);
+    document.querySelector(`.t-${selectedbtn_id}`).classList.add("t-slide");
+    document.querySelector(`.t-${selectedbtn_id}`).classList.remove("hide-t");
+    testimonial_cards.forEach((card) => {
+      if (card.classList[1].charAt(2) != selectedbtn_id) {
+        card.classList.remove("t-showing");
+        card.classList.add("t-slide-out");
+        card.classList.remove("t-slide");
+      }
+    });
+  });
+});
