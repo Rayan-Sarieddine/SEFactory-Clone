@@ -781,6 +781,7 @@ cite {
   position: absolute;
   top: 0;
   right: -100%;
+  z-index: 1;
 }
 .testimonial-all {
   width: 80%;

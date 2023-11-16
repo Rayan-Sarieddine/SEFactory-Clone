@@ -31,13 +31,12 @@ program_btns.forEach((btn) => {
         program_section_background.classList.remove(`${className}`);
       }
     });
-    console.log(program_section_background.classList);
+
     program_section_background.classList.add(`${program}-backcolor`);
     //remove hide class from pressed program card
     if (document.querySelector(`.${program}-card`).classList.contains("hide")) {
       document.querySelector(`.${program}-card`).classList.remove("hide");
 
-      console.log(program_section_background.classList);
       document
         .querySelector(`.${program}-card`)
         .classList.add("card-animation"); //animate card to show slowly
@@ -77,7 +76,6 @@ testimonials_buttons.forEach((btn) => {
       //add selected css styling to pressed btn
       btn.classList.add("t-circle-clicked");
       selectedbtn_id = btn.classList[1].charAt(0);
-      console.log(selectedbtn_id);
     }
     testimonials_buttons.forEach((btn) => {
       //remove the selected btn animation from the unclicked ones
@@ -88,13 +86,15 @@ testimonials_buttons.forEach((btn) => {
         btn.classList.remove("t-circle-clicked");
       }
     });
-    console.log(`.t-${selectedbtn_id}`);
-    document.querySelector(`.t-${selectedbtn_id}`).classList.add("t-slide");
+
     document.querySelector(`.t-${selectedbtn_id}`).classList.remove("hide-t");
+    document.querySelector(`.t-${selectedbtn_id}`).classList.add("t-slide");
+
     testimonial_cards.forEach((card) => {
       if (card.classList[1].charAt(2) != selectedbtn_id) {
+        console.log(card);
         card.classList.remove("t-showing");
-        card.classList.add("t-slide-out");
+        card.classList.add("hide-t");
         card.classList.remove("t-slide");
       }
     });
