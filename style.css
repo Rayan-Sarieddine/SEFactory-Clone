@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .page {
   overflow-x: hidden;
 }
@@ -20,6 +21,13 @@ body {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #a5a6a9;
+}
+a:hover {
+  color: #f1f2f3;
 }
 .hero-logo {
   width: 18.7rem;
@@ -173,6 +181,9 @@ body {
   display: inline-block;
   font-weight: 800;
 }
+.button-right:hover {
+  color: #363738;
+}
 .button-left {
   color: #fff;
   background-color: #363738;
@@ -238,6 +249,7 @@ nav {
 .nav-left_links li:first-child {
   color: #28eea7;
   margin-top: 6.5rem;
+  cursor: pointer;
 }
 .nav-left_links li {
   margin-bottom: 1.5rem;
@@ -292,6 +304,7 @@ nav {
   text-align: center;
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
+  cursor: pointer;
   font-weight: 800;
   color: #363738;
 }
@@ -488,6 +501,7 @@ iframe {
 .nav-a {
   cursor: pointer;
 }
+
 .programs-cards {
   width: 75%;
   margin: 0 auto;
@@ -1029,6 +1043,7 @@ cite {
   position: absolute;
   right: 0;
   top: 100%;
+  cursor: pointer;
 }
 
 /*partners section*/
