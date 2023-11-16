@@ -100,3 +100,22 @@ testimonials_buttons.forEach((btn) => {
     });
   });
 });
+
+//contact radio buttons
+const radiobuttons = document.querySelectorAll(".radio-button");
+radiobuttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let btn_id = btn.classList[1].charAt(0);
+    if (!btn.classList.contains("radio-button-clicked")) {
+      btn.classList.add("radio-button-clicked");
+    }
+    radiobuttons.forEach((btn) => {
+      if (
+        btn.classList[1].charAt(0) != btn_id &&
+        btn.classList.contains("radio-button-clicked")
+      ) {
+        btn.classList.remove("radio-button-clicked");
+      }
+    });
+  });
+});

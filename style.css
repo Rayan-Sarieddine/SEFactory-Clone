@@ -459,7 +459,8 @@ iframe {
   font-weight: 800;
 }
 /*programs section*/
-.header-programs {
+.header-programs,
+.header-contact {
   padding: 1rem 2rem;
   background-color: #363738;
   color: #fff;
@@ -874,4 +875,141 @@ cite {
 }
 .t-circle-clicked {
   background-color: #222;
+}
+
+/*contact section*/
+
+.contact {
+  background-color: #28eea7;
+  padding-bottom: 7rem;
+}
+
+.contact-main {
+  display: flex;
+  gap: 2rem;
+  width: 75%;
+  margin: 0 auto;
+}
+.contact-left_map {
+  width: 80%;
+  height: 25rem;
+  margin: 0 auto;
+}
+.contact-left_map iframe {
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.contact-card_right,
+.contact-card_left {
+  background-color: #363738;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+.contact-card_right {
+  width: 70%;
+}
+.contact-card_left {
+  width: 30%;
+}
+.contact-card_header {
+  color: #a5a6a9;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.location-title {
+  font-size: 1.4rem;
+  color: #fcfcfd;
+  font-weight: 700;
+  margin-top: 12rem;
+}
+.location-details {
+  color: #a5a6a9;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.se-email {
+  color: #28eea7;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.form-row {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.contact-form {
+  width: 100%;
+  margin-top: 2rem;
+}
+.label {
+  color: #fcfcfd;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.contact-input,
+.form-textinput textarea {
+  padding-left: 2rem;
+  font-family: "Noto Sans Mono", sans-serif;
+  color: #000;
+  border: none;
+}
+.contact-input {
+  width: 35rem;
+  height: 4rem;
+}
+.contact-input:focus,
+.form-textinput textarea:focus {
+  border: 1px solid #31b7f0;
+
+  outline: none;
+}
+.radio-row {
+  margin-top: 2rem;
+}
+.rd {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flex label {
+  color: #fcfcfd;
+  font-size: 1.4rem;
+}
+.radio-button {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.radio-button-clicked {
+  border: 4px solid #31b7f0;
+  box-shadow: 0 0 5px 1px #31b7f0;
+}
+.form-textinput {
+  margin-top: 3rem;
+  width: 100%;
+  position: relative;
+}
+.form-textinput textarea {
+  width: 100%;
+  height: 10rem;
+}
+.form-submit_button {
+  background-color: #28eea7;
+  padding: 1rem 2rem;
+  font-family: "Noto Sans Mono", sans-serif;
+  font-weight: 700;
+  color: #232323;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 2rem;
+  position: absolute;
+  right: 0;
+  top: 100%;
 }
