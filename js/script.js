@@ -119,3 +119,37 @@ radiobuttons.forEach((btn) => {
     });
   });
 });
+
+//faqs section
+const question_box = document.querySelectorAll(".question-box");
+question_box.forEach((box) => {
+  box.addEventListener("click", () => {
+    box.children[1].classList.toggle("hide-answer");
+  });
+});
+//header text animation
+const hero_text = document.querySelector(".hero-main_heading");
+
+const words = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+let wordIndex = 0;
+let i = 0;
+let typing = true;
+
+const time = setInterval(() => {
+  const currentWord = words[wordIndex];
+  hero_text.innerHTML = currentWord.slice(0, i);
+
+  if (i === currentWord.length && typing) {
+    typing = false;
+    i--;
+  } else if (i === 0 && !typing) {
+    typing = true;
+    wordIndex = (wordIndex + 1) % words.length;
+  }
+
+  if (typing) {
+    i++;
+  } else {
+    i--;
+  }
+}, 100);
